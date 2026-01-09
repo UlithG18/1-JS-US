@@ -2,25 +2,31 @@ let userAge = 0
 
 let userName = prompt("Enter your name here");
 userAge = prompt("Enter your age here");
-confirm("Are you a coder?");
 
-switch (userAge) {
-    case 0 < userAge <= 11:
-        console.log("You are a kid")
+if (0 < userAge <= 11) {
+    console.log("You are a kid")
+    alert("You are a kid")
+} 
 
-    case 12 <= userAge <= 17:
-        console.log(`Hi ${userName}, you're a minor. keep learning and enjoying code!`)
+else if (12 <= userAge <= 17) {
+    console.log(`Hi ${userName}, you're a minor. keep learning and enjoying code!`)
+    alert(`Hi ${userName}, you're a minor. keep learning and enjoying code!`)
+} 
 
-    case 18 <= userAge <= 35:
-        console.log("You are an adult.")
+else if (18 <= userAge <= 35) {
+    console.log(`Hi ${userName}, you're an adult. Get ready for grea oportunities in the world of programming!`)
+    alert(`Hi ${userName}, you're an adult. Get ready for grea oportunities in the world of programming!`)
+} 
 
-    case 36 <= userAge <= 100:
-        console.log("Enjoy your life.")
+else if (12 <= userAge <= 17) {
+    console.log(`Hi ${userName}, enyoy your life.`)
+    alert(`Hi ${userName}, enyoy your life.`)
+} 
 
-    default:
-        console.error("Error: Please, enter a valid age in numbers.")
+else {
+    console.log(`Error: Please, enter a valid age in numbers`)
+    alert(`Error: Please, enter a valid age in numbers`)
 }
-
 
 
 console.log(userName, userAge)
