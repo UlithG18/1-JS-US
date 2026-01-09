@@ -1,7 +1,5 @@
-let userAge = 0
-
 let userName = prompt("Enter your name here");
-userAge = Number(prompt("Enter your age here"));
+let userAge = Number(prompt("Enter your age here"));
 
 
 
