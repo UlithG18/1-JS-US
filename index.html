@@ -4,16 +4,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Interactive System</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Notes - mini-app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="assets/riwi.png">
 </head>
 
-<body>
+<body class="bg-gray-100 flex flex-col">
+    <section class="flex flex-col text-center mt-20 gap-5">
+        <h1 class="text-xl font-bold">Notes</h1>
+        <p>This is a mini-app to practice dom manipulation, you can type any text in the next input and the text will
+            appear
+            in the page as a little note</p>
+        <form id="notes-form" class="flex flex-col text-center mt-10 gap-10">
+            <label for="note-content" class="font-bold">Let your note</label>
+            <input id="note-content" placeholder="Type your note" class="text-center mx-auto py-2">
+            <button id="add-btn" type="submit"
+                class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg mx-auto">
+                Add
+            </button>
+        </form>
+
+    </section>
+    <ul id="notes-list" class="flex flex-row flex-wrap mx-auto gap-5 mt-10">
+    </ul>
 
 
-    <script src="interactive-system.js"></script>
+    <script src="dom_manipulation.js"></script>
 </body>
 
 </html>
