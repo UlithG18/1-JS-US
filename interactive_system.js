@@ -1,3 +1,9 @@
+
+// Ask for the information to start the logic
+let userName = prompt("Enter your name here");
+let userAge = Number(prompt("Enter your age here"));
+
+
 // Check if the user is a child (valid positive age up to 11)
 if (0 < userAge && userAge <= 11) {
     // Output a message for kids

@@ -15,3 +15,5 @@ It validates numeric input and determines the life stage of the user.
 ### Purpose
 
 Practice conditional logic (`if / else if / else`) and basic input validation in JavaScript.
+
+*Page: https://ulithg18.github.io/1-JS-US/*
